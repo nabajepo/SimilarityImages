@@ -1,0 +1,2 @@
+To execute the program:
+go run similaritySearch.go q00.jpg imageDataset2_15_20
