@@ -40,14 +40,17 @@ The program is implemented in **Go** and uses **goroutines + channels** to compu
 ---
 
 ## Project structure
-SimilarityImages/
-├── similaritySearch.go # main program
-├── queryImages/ # query images (input)
-├── imageDataset2_15_20/ # dataset images (database)
-├── execution.txt # notes / execution example
-└── README.md
+<img width="373" height="146" alt="image" src="https://github.com/user-attachments/assets/9b5da07c-3918-426e-befa-681464b86e57" />
+
 
 ---
+## Notes / Limitations
+
+Notes / Limitations
+
+1. Works best when dataset images have similar size/format.
+
+2. Current implementation focuses on color similarity (not shapes/objects).
 
 ## Usage
 From the repository root:
@@ -55,7 +58,7 @@ From the repository root:
 ```bash
 go run similaritySearch.go <query_image_filename> <dataset_folder>
 
-Example Input : **go run similaritySearch.go q01.jpg imageDataset2_15_20**
+Example Input : go run similaritySearch.go q01.jpg imageDataset2_15_20
 
 ---
 
@@ -67,15 +70,8 @@ Example Output :
 The 2nd similarity is 201.jpg  with a rate of 0.81
 ...
 EXECUTION TIME IS:  2.31s**
+```
 
----
 
-## Notes / Limitations
-
-Notes / Limitations
-
-1. Works best when dataset images have similar size/format.
-
-2. Current implementation focuses on color similarity (not shapes/objects).
 
 
